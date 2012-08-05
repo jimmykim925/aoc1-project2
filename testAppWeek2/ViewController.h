@@ -15,6 +15,9 @@
   UILabel *author;
   UILabel *name;
   UILabel *published;
+  UILabel *publishedDate;
+  UILabel *summary;
+  UILabel *summaryDetails;
 }
 
 @end
