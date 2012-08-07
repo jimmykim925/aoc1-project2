@@ -18,6 +18,17 @@
   UILabel *publishedDate;
   UILabel *summary;
   UILabel *summaryDetails;
+  UILabel *listOfItems;
+  UILabel *listDetails;
+  
+  NSString *listItem0;
+  NSString *listItem1;
+  NSString *listItem2;
+  NSString *listItem3;
+  NSString *listItem4;
+  NSMutableString *mutableString;
+  NSArray *listItemsArray;
+  NSMutableArray *mutableArray;
 }
 
 @end
