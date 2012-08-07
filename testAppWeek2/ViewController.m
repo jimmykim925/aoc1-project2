@@ -111,26 +111,31 @@
   
   // Create NSStrings for list of items
   listItem0 = [[NSString alloc] init];
-  listItem0 = @"Wand";
+  listItem0 = @"Wand, ";
   
   listItem1 = [[NSString alloc] init];
-  listItem1 = @"Magic";
+  listItem1 = @"Magic, ";
   
   listItem2 = [[NSString alloc] init];
-  listItem2 = @"Trains";
+  listItem2 = @"Trains, ";
   
   listItem3 = [[NSString alloc] init];
-  listItem3 = @"Serpents";
+  listItem3 = @"Serpents, ";
   
   listItem4 = [[NSString alloc] init];
-  listItem4 = @"Family";
+  listItem4 = @"Family, ";
   
-  mutableString = [[NSMutableString alloc] init];
+  listItemMutableString = [[NSMutableString alloc] init];
   
   // Array for list items
   listItemsArray = [[NSArray alloc] initWithObjects:listItem0, listItem1, listItem2, listItem3, listItem4 ,nil];
   
-  
+  // Loop through array and append to mutable string
+  for (int i=0; i <[listItemsArray count]; i++){
+    [listItemMutableString appendString:[listItemsArray objectAtIndex:i]];
+  }
+  // Append mutable string values to label
+  listDetails.text = listItemMutableString;
   
   [super viewDidAppear:animated];
 }

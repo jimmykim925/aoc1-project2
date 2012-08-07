@@ -26,7 +26,7 @@
   NSString *listItem2;
   NSString *listItem3;
   NSString *listItem4;
-  NSMutableString *mutableString;
+  NSMutableString *listItemMutableString;
   NSArray *listItemsArray;
   NSMutableArray *mutableArray;
 }
